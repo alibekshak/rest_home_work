@@ -11,11 +11,11 @@ class ArtistSerializer(serializers.ModelSerializer):
 class PaintingSerializer(serializers.ModelSerializer):
     class Meta:
         model = Painting
-        fields = ('id', 'paint', 'category', 'image', 'text', 'created_at')
+        fields = ('id', 'paint', 'slug', 'category', 'image', 'text', 'created_at')
 
 
 class GetPaintingSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Painting
-        fields = ('id', 'paint', 'category', 'image', 'text', 'created_at')
+        fields = ('id', 'paint', 'slug', 'category', 'image', 'text', 'created_at')
